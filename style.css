@@ -8,6 +8,10 @@
 }
 
 /* ----Ensemble---- */
+.header{
+    background-color: white;
+}
+
 .header .navbar{
     position: relative;
     height: 15vh;
