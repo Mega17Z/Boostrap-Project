@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Templates</title>
+</head>
+<body>
+    <div class="header fixed-top bg-light">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand" href="#">Multi</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto me-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Menu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Events</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Chefs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Gallery</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <button class="btn ms-2" type="submit">Get Started</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <!-- Carousel -->
+    <section>
+        <div class="sect">
+            <div id="carouselExampleCaptions" class="carousel slide w-100 h-100" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner w-100 h-100">
+                <div class="carousel-item active w-100 h-100">
+                    <img src="images/0.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption w-100 text-center d-none d-md-block">
+                      <h1 class="mb-4">First slide label</h1>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem earum harum deserunt est voluptatibus! Numquam assumenda eum reprehenderit esse asperiores excepturi eaque consectetur dolorem quo accusamus? Omnis vel cumque maxime!</p>
+                      <button class="btn" type="submit">Get Started</button>
+                    </div>
+                </div>
+                <div class="carousel-item w-100 h-100">
+                    <img src="images/1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption w-100 text-center d-none d-md-block">
+                        <h1 class="mb-4">First slide label</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem earum harum deserunt est voluptatibus! Numquam assumenda eum reprehenderit esse asperiores excepturi eaque consectetur dolorem quo accusamus? Omnis vel cumque maxime!</p>
+                        <button class="btn mt-3" type="submit">Get Started</button>
+                    </div>
+                </div>
+                <div class="carousel-item w-100 h-100">
+                    <img src="images/2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption w-100 text-center d-none d-md-block">
+                        <h1 class="mb-4">First slide label</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem earum harum deserunt est voluptatibus! Numquam assumenda eum reprehenderit esse asperiores excepturi eaque consectetur dolorem quo accusamus? Omnis vel cumque maxime!</p>
+                        <button class="btn" type="submit">Get Started</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+        </div>
+    </section>
+    <!-- About -->
+    <section>
+        <div class="container mt-5">
+            <div class="row about">
+                <div class="col-12 mb-4">
+                    <div class="titre">
+                        <h6 class="m-0">ABOUT <span></span></h6>
+                        <h3 class="m-0">LEARN MORE ABOUT US</h3>
+                    </div>
+                </div>
+                <div class="col-6 about-1 p-3 mt-3">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod ipsam minima iure reprehenderit repudiandae pariatur.</p>
+                    <ul>
+                        <li><i class="fa-regular fa-circle-check"></i> Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Lorem ipsum dolor sit amet consectetur</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Lorem ipsum dolor sit. amet consectetur </li>
+                    </ul>
+                </div>
+                <div class="col-6 p-3 about-2 mt-3">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod ipsam minima iure reprehenderit repudiandae pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi illo voluptatem mollitia sint quae exercitationem ea, nesciunt quos maiores hic adipisci dolores in dicta temporibus iusto vero laboriosam nobis reiciendis?</p>
+                    <button class="btn" type="submit">Get Started <i class="fa-solid fa-arrow-right text-light ms-2"></i></button>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-3 flex-column gap-2 p-4">
+                    <div class="content rounded-0 w-100 h-100 shadow d-flex flex-column align-items-center justify-content-center">
+                        <div class="content-icone shadow">
+                            <i class="fa-regular fa-circle-user"></i>
+                        </div>
+                        <h2 class="m-0 mt-2">246</h2>
+                        <p class="m-0">Lorem ipsum</p>
+                    </div>
+                </div>
+                <div class="col-3 flex-column gap-2 p-4">
+                    <div class="content rounded-0 w-100 h-100 shadow d-flex flex-column align-items-center justify-content-center">
+                        <div class="content-icone shadow">
+                            <i class="fa-regular fa-circle-user"></i>
+                        </div>
+                        <h2 class="m-0 mt-2">246</h2>
+                        <p class="m-0">Lorem ipsum</p>
+                    </div>
+                </div>
+                <div class="col-3 flex-column gap-2 p-4">
+                    <div class="content rounded-0 w-100 h-100 shadow d-flex flex-column align-items-center justify-content-center">
+                        <div class="content-icone shadow">
+                            <i class="fa-regular fa-circle-user"></i>
+                        </div>
+                        <h2 class="m-0 mt-2">246</h2>
+                        <p class="m-0">Lorem ipsum</p>
+                    </div>
+                </div>
+                <div class="col-3 flex-column gap-2 p-4">
+                    <div class="content rounded-0 w-100 h-100 shadow d-flex flex-column align-items-center justify-content-center">
+                        <div class="content-icone shadow">
+                            <i class="fa-regular fa-circle-user"></i>
+                        </div>
+                        <h2 class="m-0 mt-2">246</h2>
+                        <p class="m-0">Lorem ipsum</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-3 p-1 about-3">
+                    <h4>Lorem ipsum dolor sit.</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam impedit cum omnis amet eum quibusdam, dignissimos delectus velit atque libero eveniet qui sapiente neque, id, quia enim! Dolor, obcaecati voluptate!</p>
+                    <ul class="mt-4">
+                        <li><i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet.</li>
+                        <li><i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet.</li>
+                        <li><i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>
+                <div class="col-3 p-1 about-3">
+                    <h4>Lorem ipsum dolor sit.</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam impedit cum omnis amet eum quibusdam, dignissimos delectus velit atque libero eveniet qui sapiente neque, id, quia enim! Dolor, obcaecati voluptate!</p>
+                    <ul class="mt-4">
+                        <li><i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet.</li>
+                        <li><i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet.</li>
+                        <li><i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>
+                <div class="col-3 p-1 about-3">
+                    <h4>Lorem ipsum dolor sit.</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam impedit cum omnis amet eum quibusdam, dignissimos delectus velit atque libero eveniet qui sapiente neque, id, quia enim! Dolor, obcaecati voluptate!</p>
+                    <ul class="mt-4">
+                        <li><i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet.</li>
+                        <li><i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet.</li>
+                        <li><i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>
+                <div class="col-3 p-1 about-3">
+                    <h4>Lorem ipsum dolor sit.</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam impedit cum omnis amet eum quibusdam, dignissimos delectus velit atque libero eveniet qui sapiente neque, id, quia enim! Dolor, obcaecati voluptate!</p>
+                    <ul class="mt-4">
+                        <li><i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet.</li>
+                        <li><i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet.</li>
+                        <li><i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services -->
+    <section>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-12 mb-4">
+                    <div class="titre">
+                        <h6>SERVICES <span></span></h6>
+                        <h3>CHECK OUR SERVICES</h3>
+                    </div>
+                </div>
+                <div class="col-4 p-3">
+                    <div class="service-content border text-center d-flex align-items-center justify-content-center flex-column p-4 gap-2">
+                        <i class="bi bi-box-fill"></i>
+                        <h4>Lorem ipsum</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, optio.</p>
+                    </div>
+                </div>
+                <div class="col-4 p-3">
+                    <div class="service-content border text-center d-flex align-items-center justify-content-center flex-column p-4 gap-2">
+                        <i class="bi bi-box-fill"></i>
+                        <h4>Lorem ipsum</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, optio.</p>
+                    </div>
+                </div>
+                <div class="col-4 p-3">
+                    <div class="service-content border text-center d-flex align-items-center justify-content-center flex-column p-4 gap-2">
+                        <i class="bi bi-box-fill"></i>
+                        <h4>Lorem ipsum</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, optio.</p>
+                    </div>
+                </div>
+                <div class="col-4 p-3">
+                    <div class="service-content border text-center d-flex align-items-center justify-content-center flex-column p-4 gap-2">
+                        <i class="bi bi-box-fill"></i>
+                        <h4>Lorem ipsum</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, optio.</p>
+                    </div>
+                </div>
+                <div class="col-4 p-3">
+                    <div class="service-content border text-center d-flex align-items-center justify-content-center flex-column p-4 gap-2">
+                        <i class="bi bi-box-fill"></i>
+                        <h4>Lorem ipsum</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, optio.</p>
+                    </div>
+                </div>
+                <div class="col-4 p-3">
+                    <div class="service-content border text-center d-flex align-items-center justify-content-center flex-column p-4 gap-2">
+                        <i class="bi bi-box-fill"></i>
+                        <h4>Lorem ipsum</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, optio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials -->
+    <section class="testi p-5 mt-5">
+        <div class="container">
+            <div class="row p-5">
+                <div class="col-12 mb-4">
+                    <div class="titre">
+                        <h6>TESTIMONIALS <span></span></h6>
+                        <h3>CHECK OUR TESTIMONIALS</h3>
+                    </div>
+                </div>
+                <div class="col-6 p-5">
+                    <div class="temoins">
+                        <div class="temoin p-4 shadow border">
+                          <div class="profil-temoin position-relative">
+                            <img src="" alt="" class="img-fluid position-absolute">
+                            <h4 class="ms-2">Saul Goodman</h4>
+                            <h5 class="ms-2">Profession</h5>
+                          </div>
+                          <div class="ms-2 etoile">
+                            <img src="images/icon-star.svg" alt="">
+                            <img src="images/icon-star.svg" alt="">
+                            <img src="images/icon-star.svg" alt="">
+                            <img src="images/icon-star.svg" alt="">
+                            <img src="images/icon-star.svg" alt="">
+                          </div>
+                          <p class="mt-3"><i class="fa-solid fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti accusamus animi eaque perspiciatis aperiam dolores repudiandae iure veritatis. Laborum ratione non iusto expedita qui similique sequi delectus, velit culpa sint!<i class="fa-solid fa-quote-right"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 p-5">
+                    <div class="temoins">
+                        <div class="temoin p-4 shadow border">
+                          <div class="profil-temoin position-relative">
+                            <img src="" alt="" class="img-fluid position-absolute">
+                            <h4 class="ms-2">Saul Goodman</h4>
+                            <h5 class="ms-2">Profession</h5>
+                          </div>
+                          <div class="ms-2 etoile">
+                            <img src="images/icon-star.svg" alt="">
+                            <img src="images/icon-star.svg" alt="">
+                            <img src="images/icon-star.svg" alt="">
+                            <img src="images/icon-star.svg" alt="">
+                            <img src="images/icon-star.svg" alt="">
+                          </div>
+                          <p class="mt-3"><i class="fa-solid fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti accusamus animi eaque perspiciatis aperiam dolores repudiandae iure veritatis. Laborum ratione non iusto expedita qui similique sequi delectus, velit culpa sint!<i class="fa-solid fa-quote-right"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="point">
+                    <i class="active"></i>
+                    <i class=""></i>
+                    <i class=""></i>
+                    <i class=""></i>
+                    <i class=""></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Attachement -->
+    <section class="attachement">
+        <div class="call p-5 text-center">
+            <h3>Call To Action</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi porro, accusamus et facere placeat molestiae laboriosam, sint voluptas quod culpa sed sit. Neque dignissimos beatae modi, libero excepturi sint laudantium!</p>
+            <a href="" class="btn">Call To Action</a>
+        </div>
+    </section>
+    <!-- Portfolio -->
+    <section>
+        <div class="container mt-5">
+            <div class="row portfolio">
+                <div class="col-12 mb-4">
+                    <div class="titre">
+                        <h6>PORTFOLIO <span></span></h6>
+                        <h3>CHECK OUR PORTFOLIO</h3>
+                    </div>
+                </div>
+                <div class="header-menu">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#">Starters</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Breakfast</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Lunch</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link">Dinner</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 p-3">
+                    <div class="card border">
+                      <img src="images/1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body p-2">
+                        <h6 class="card-title fw-bold">Threads</h6>
+                        <p class="card-text fs-6">Illustration</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 p-3">
+                    <div class="card border">
+                      <img src="images/1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body p-2">
+                        <h6 class="card-title fw-bold">Explore</h6>
+                        <p class="card-text fs-6">Graphic Design</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 p-3">
+                    <div class="card border">
+                      <img src="images/1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body p-2">
+                        <h6 class="card-title fw-bold">Finish</h6>
+                        <p class="card-text fs-6">Identity</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 p-3">
+                    <div class="card border">
+                      <img src="images/1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body p-2">
+                        <h6 class="card-title fw-bold">Lines</h6>
+                        <p class="card-text fs-6">Branding</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 p-3">
+                    <div class="card border">
+                      <img src="images/1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body p-2">
+                        <h6 class="card-title fw-bold">Southwest</h6>
+                        <p class="card-text fs-6">Websit Design</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 p-3">
+                    <div class="card border">
+                      <img src="images/1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body p-2">
+                        <h6 class="card-title fw-bold">Window</h6>
+                        <p class="card-text fs-6">Photography</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 p-3">
+                    <div class="card border">
+                      <img src="images/1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body p-2">
+                        <h6 class="card-title fw-bold">Threads</h6>
+                        <p class="card-text fs-6">Illustration</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 p-3">
+                    <div class="card border">
+                      <img src="images/1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body p-2">
+                        <h6 class="card-title fw-bold">Explore</h6>
+                        <p class="card-text fs-6">Graphic Design</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 p-3">
+                    <div class="card border">
+                      <img src="images/1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body p-2">
+                        <h6 class="card-title fw-bold">Finish</h6>
+                        <p class="card-text fs-6">Identity</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 p-3">
+                    <div class="card border">
+                      <img src="images/1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body p-2">
+                        <h6 class="card-title fw-bold">Lines</h6>
+                        <p class="card-text fs-6">Branding</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 p-3">
+                    <div class="card border">
+                      <img src="images/1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body p-2">
+                        <h6 class="card-title fw-bold">Southwest</h6>
+                        <p class="card-text fs-6">Websit Design</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 p-3">
+                    <div class="card border">
+                      <img src="images/1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body p-2">
+                        <h6 class="card-title fw-bold">Window</h6>
+                        <p class="card-text fs-6">Photography</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team -->
+    <section>
+        <div class="container mt-5 Team">
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <div class="titre">
+                        <h6>TEAM <span></span></h6>
+                        <h3>CHECK OUR TEAM</h3>
+                    </div>
+                </div>
+                <div class="col-3 p-2">
+                    <img src="images/0.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-3 p-2">
+                    <img src="images/0.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-3 p-2">
+                    <img src="images/0.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-3 p-2">
+                    <img src="images/0.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing -->
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <div class="titre">
+                        <h6>PRICING <span></span></h6>
+                        <h3>CHECK OUR PRICING</h3>
+                    </div>
+                </div>
+                <div class="col-md-4 p-2">
+                    <div class="blocs rounded-1 shadow p-5">
+                      <div class="bloc-entete">
+                        <h4>Free Plan</h3>
+                        <p class="price"><span class="dollar">$</span>0<span class="price-samall">/month</span></p>
+                      </div>
+                      <ul>
+                        <li><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit.</li>
+                        <li><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit.</li>
+                        <li><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit.</li>
+                        <li><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit.</li>
+                        <li><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit.</li>
+                      </ul>
+                      <a href="" class="btn mt-4 rounded-1">Buy Now</a>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-2">
+                    <div class="blocs rounded-1 shadow p-5 trait">
+                      <div class="bloc-entete">
+                        <h4>Free Plan</h4>
+                        <p class="price"><span class="dollar">$</span>0<span class="price-samall">/month</span></p>
+                      </div>
+                      <ul>
+                        <li><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit.</li>
+                        <li><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit.</li>
+                        <li><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit.</li>
+                        <li><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit.</li>
+                        <li><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit.</li>
+                      </ul>
+                      <a href="" class="btn mt-4 rounded-1">Buy Now</a>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-2">
+                    <div class="blocs rounded-1 shadow p-5">
+                      <div class="bloc-entete">
+                        <h4>Free Plan</h3>
+                        <p class="price"><span class="dollar">$</span>0<span class="price-samall">/month</span></p>
+                      </div>
+                      <ul>
+                        <li><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit.</li>
+                        <li><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit.</li>
+                        <li><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit.</li>
+                        <li><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit.</li>
+                        <li><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit.</li>
+                      </ul>
+                      <a href="" class="btn mt-4 rounded-1">Buy Now</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <!-- Frequently -->
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <div class="titre">
+                        <h6>FREQUENTLY ASKED QUESTIONS <span></span></h6>
+                        <h3>FREQUENTLY ASKED QUESTIONS</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row ligne p-3 my-2">
+                <div class="col-6 d-flex align-items-start p-3">
+                    <i class="fa-regular fa-circle-question me-3"></i>
+                    <h5 class="m-0">Titre de ce paragraphe</h5>
+                </div>
+                <div class="col-6 d-flex align-items-center p-3">
+                    <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                </div>
+            </div>
+            <div class="row ligne p-3 my-2">
+                <div class="col-6 d-flex align-items-start p-3">
+                    <i class="fa-regular fa-circle-question me-3"></i>
+                    <h5 class="m-0">Titre de ce paragraphe</h5>
+                </div>
+                <div class="col-6 d-flex align-items-center p-3">
+                    <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                </div>
+            </div>
+            <div class="row ligne p-3 my-2">
+                <div class="col-6 d-flex align-items-start p-3">
+                    <i class="fa-regular fa-circle-question me-3"></i>
+                    <h5 class="m-0">Titre de ce paragraphe</h5>
+                </div>
+                <div class="col-6 d-flex align-items-center p-3">
+                    <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                </div>
+            </div>
+            <div class="row ligne p-3 my-2">
+                <div class="col-6 d-flex align-items-start p-3">
+                    <i class="fa-regular fa-circle-question me-3"></i>
+                    <h5 class="m-0">Titre de ce paragraphe</h5>
+                </div>
+                <div class="col-6 d-flex align-items-center p-3">
+                    <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                </div>
+            </div>
+            <div class="row ligne p-3 my-2">
+                <div class="col-6 d-flex align-items-start p-3">
+                    <i class="fa-regular fa-circle-question me-3"></i>
+                    <h5 class="m-0">Titre de ce paragraphe</h5>
+                </div>
+                <div class="col-6 d-flex align-items-center p-3">
+                    <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section class="mt-5 other p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <div class="titre">
+                        <h6>FREQUENTLY ASKED QUESTIONS <span></span></h6>
+                        <h3>FREQUENTLY ASKED QUESTIONS</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 d-flex flex-column mt-5">
+                    <div class="coordonnes w-100 p-4 d-flex align-items-center justify-content-center flex-column bg-light gap-2">
+                        <div class="icone">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <h6>Adress</h6>
+                        <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="coordone-block d-flex mt-4">
+                        <div class="coordonnes w-50 me-2 p-4 d-flex align-items-center justify-content-center flex-column bg-light gap-2">
+                            <div class="icone">
+                                <i class="bi bi-geo-alt"></i>
+                            </div>
+                            <h6>Adress</h6>
+                            <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="coordonnes w-50 ms-2 p-4 d-flex align-items-center justify-content-center flex-column bg-light gap-2">
+                            <div class="icone">
+                                <i class="bi bi-geo-alt"></i>
+                            </div>
+                            <h6>Adress</h6>
+                            <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-6">
+                    <form class="row mt-5 g-4 shadow p-3 bg-light">
+                        <div class="col-md-6">
+                          <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-md-6">
+                          <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-12">
+                          <input type="text" class="form-control" id="inputAddress">
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 138px"></textarea>
+                          </div>
+                        <div class="col-12 d-flex justify-content-center">
+                          <button type="submit" class="btn">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer pt-5 pb-3">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-6 col-md-3">
+                    <div class="bloc-footer">
+                        <div class="footer-bloc">
+                            <h5>Adress</h3>
+                            <p>Lorem, ipsum dolor.</p>
+                            <p>Lorem, ipsum dolor.</p>
+                            <p>Lorem, ipsum dolor.</p>
+                            <p>Lorem, ipsum dolor.</p>
+                            <div class="footer-sociaux mt-4">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="bloc-footer">
+                        <div class="footer-bloc">
+                            <h5>Adress</h3>
+                            <ul class="list-unstyled">
+                                <li>Lorem, ipsum.</li>
+                                <li>Lorem, ipsum.</li>
+                                <li>Lorem, ipsum.</li>
+                                <li>Lorem, ipsum.</li>
+                                <li>Lorem, ipsum.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="bloc-footer">
+                        <div class="footer-bloc">
+                            <h5>Adress</h3>
+                            <ul class="list-unstyled">
+                                <li>Lorem, ipsum.</li>
+                                <li>Lorem, ipsum.</li>
+                                <li>Lorem, ipsum.</li>
+                                <li>Lorem, ipsum.</li>
+                                <li>Lorem, ipsum.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="bloc-footer">
+                        <div class="footer-bloc">
+                            <h5>Adress</h3>
+                            <p>Lorem ipsum dolor sit amet. Lorem, ipsum.</p>
+                            <form class="d-flex">
+                                <input type="text" class="w-100">
+                                <button class="btn">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="last mt-4 text-center">
+                <h5>@ Copyright All right Reserved</h5>
+                <h6>Design by <span>Abdoul Wakhab Diouf</span></h6>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
