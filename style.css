@@ -149,6 +149,13 @@
     background-color: white;
 }
 
+.content h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
 .content-icone{
     position: absolute;
     top: -20px;
@@ -166,8 +173,12 @@
     color: rgb(247, 59, 17);
 }
 
+
+.about-3 h5{
+    font-weight: 700;
+}
 .about-3 p{
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .about-3 ul{
@@ -199,14 +210,22 @@
     color: rgb(247, 59, 17);
 }
 
+.service-content h4{
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+}
+
 .service-content p{
     font-size: 14px;
+    font-weight: 600;
+    opacity: 0.7;
 }
 
 
 /* Testimonials */
 .testi{
-    background-color: rgb(178, 220, 255);
+    background-color: whitesmoke;
+    /* margin-top: 6rem; */
 }
 
 .temoins .temoin{
@@ -214,43 +233,50 @@
     background-color: white;
 }
 
+.profil-temoin{
+    margin-left: 15px;
+}
+
 .profil-temoin img{
-    width: 5.5rem;
-    height: 5.5rem;
+    width: 5rem;
+    height: 5rem;
     top: -0.2rem;
-    left: -6rem;
-    background-color: aqua;
+    left: -5rem;
+    object-fit: cover;
 }
 
 .profil-temoin h4{
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .profil-temoin h5{
     font-size: 14px;
     color: rgb(63, 63, 63, 0.500);
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .temoin .etoile{
-    margin: 10px 0;
+    margin-left: 20px;
 }
 
 .temoin p{
-    font-size: 15px;
+    font-size: 16px;
+
 }
 
 .temoin p i{
     font-size: 20px;
-    margin: 0 5px;
+    margin: 0 10px;
     color: rgb(247, 59, 17);
-    opacity: 0.6;
+    opacity: 0.5;
 }
 
 .point{
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .point i{
@@ -273,6 +299,7 @@
 }
 
 .attachement .call{
+    position: relative;
     width: 100%;
     height: 100%;
     display: flex;
@@ -286,15 +313,27 @@
     color: white;
 }
 
+.call::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.215);
+}
+
 .call h3{
     letter-spacing: 2px;
     font-weight: 700;
+    z-index: 2;
 }
 
 .call p{
-    font-size: 17px;
+    font-size: 16px;
     width: 100%;
+    font-weight: 600;
     max-width: 900px;
+    z-index: 2;
 }
 
 .call .btn{
@@ -304,6 +343,7 @@
     font-weight: 600;
     border: 1px solid white;
     border-radius: 5px;
+    z-index: 2;
 }
 
 
@@ -311,6 +351,18 @@
 
 .portfolio p{
     color: rgba(0, 0, 0, 0.404);
+}
+
+.header-menu .nav-link{
+    position: relative;
+    color: rgba(11, 11, 11, 0.927);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.nav-link:hover{
+    color: rgb(247, 59, 17);
 }
 
 .portfolio .card{
@@ -323,23 +375,25 @@
     height: 45vh;
 }
 
+.card-title{
+    font-size: 18px;
+}
+
+.portfolio .card-text{
+    font-size: 15px;
+}
+
 .header-menu .nav{
     gap: 15px;
 }
 
-.header-menu .nav-link{
-    position: relative;
-    color: rgba(11, 11, 11, 0.927);
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.nav-link:hover{
-    color: rgb(247, 59, 17);
-}
-
 
 /* Team */
+
+.Team{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
 
 .Team img{
     height: 40vh;
@@ -390,6 +444,11 @@
     font-size: 15px;
 }
 
+.blocs ul li s{
+    color: black;
+    opacity: 0.5;
+}
+
 .blocs ul li i{
     color: rgb(0, 135, 68);
     margin-right: 13px;
@@ -418,30 +477,45 @@
 
 /* Frequently */
 
+.frequently{
+    margin-top: 5rem;
+}
+
 .ligne{
     border-bottom: 1px solid;
 }
 
 .ligne h5{
     font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .ligne p{
     font-size: 15px;
+    font-weight: 500;
 }
 
 .ligne i{
+    margin-top: 2px;
+    font-size: 18px;
     color: rgb(247, 59, 17);
+}
+
+.ligne:nth-child(6){
+    border-bottom: 0;
 }
 
 /* Contact */
 
 .other{
-    background-color: rgb(178, 220, 255);
+    background-color: whitesmoke;
 }
 
+.coordonnes p{
+    font-size: 15px;
+    text-align: center;
+}
 
-/* icones */
 .icone{
     position: relative;
     width: 50px;
@@ -453,9 +527,17 @@
     border: 2px dotted rgb(247, 59, 17);
 }
 
+.coordonnes{
+    background-color: white;
+}
+
 .icone i{
     font-size: 25px;
     color: rgb(247, 59, 17);
+}
+
+form{
+    background-color: white;
 }
 
 form .btn{
@@ -468,9 +550,40 @@ form .btn{
 /* Footer */
 
 footer{
-    /* margin-top: 4rem; */
-    background-color: rgb(31, 31, 36);
-    /* padding: 2rem 0; */
+    background-color: black;
+}
+
+.footer-bloc .btn{
+    border-radius: 0;
+}
+
+.footer-bloc h5{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-bloc input{
+    background-color: black;
+}
+
+.subscribe{
+    font-size: 14px;
+}
+
+.footer-bloc ul li{
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.6;
+    margin: 10px 0;
+}
+
+.footer-bloc-1 h5{
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.footer-bloc-1 p{
+    font-size: 14px !important;
 }
 
 .bloc-footer{
@@ -512,5 +625,5 @@ footer hr{
 }
 
 .last h6 span{
-    color: rgb(206, 18, 18);
+    color: rgb(247, 59, 17);
 }
